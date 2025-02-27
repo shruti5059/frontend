@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -51,7 +50,7 @@ export const Dashboard = () => {
             <ToastContainer />
 
             <h2>New Tickets</h2>
-            
+
 
             <h2>My Assigned Tickets</h2>
             <ul>

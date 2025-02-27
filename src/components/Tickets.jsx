@@ -44,10 +44,6 @@ const Tickets = () => {
         setPage(1);
     };
 
-    // const handleEdit = (ticketid) => {
-    //     navigate(`/ticket/${ticketid}`); // Redirect to edit page
-    // };
-
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
             setPage(newPage); // Now updates and refetches data
@@ -102,11 +98,11 @@ const Tickets = () => {
             { header: 'Contact No', accessorKey: 'contactno' },
             {
                 header: 'Agent',
-                accessorKey: 'agent.name' // Fetch agent name 
+                accessorKey: 'agent.name'
             },
             {
                 header: 'Department',
-                accessorKey: 'department.deptname' // Fetch department name 
+                accessorKey: 'department.deptname'
             },
             {
                 header: 'Actions',

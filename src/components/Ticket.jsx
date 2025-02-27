@@ -99,8 +99,8 @@ export const Ticket = () => {
                 const newTicket = response.data.ticket;
                 setTickets((prevTickets) => [newTicket, ...prevTickets]);
 
-                 // Convert agent ID to string before emitting
-                 if (newTicket.agentid) {
+                // Convert agent ID to string before emitting
+                if (newTicket.agentid) {
                     socket.emit("assign_ticket", {
                         ticketid: newTicket.ticketid,
                         assignedUserId: String(newTicket.agentid),
